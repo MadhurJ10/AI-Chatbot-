@@ -9,7 +9,7 @@ const Api = () => {
 
   useEffect(() => {
     const generateContent = async () => {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCmx5QjMWyWoBBpS7dDXzqV8n8s1kwpqi0`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.REACT_APP_API_KEY}`;
 
       const headers = {
         'Content-Type': 'application/json',
